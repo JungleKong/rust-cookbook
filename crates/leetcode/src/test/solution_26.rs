@@ -2,6 +2,7 @@ use crate::Solution;
 use std::collections::HashSet;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         let mut set = HashSet::new();
         let mut k = 0;
