@@ -1,0 +1,22 @@
+[package]
+name = "rust-cookbook"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+exclude = [
+]
+members = [
+  "crates/*",
+]
+
+
+[dependencies]
+image = "0.24.5"
+png = "0.17.9"
+futures = "0.3.28"
+glam = "0.28.0"
+tokio = { version = "1", features = ["full"] }
